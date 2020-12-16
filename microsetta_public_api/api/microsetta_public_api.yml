@@ -668,7 +668,9 @@ paths:
     get:
       operationId: microsetta_public_api.api.datasets.dataset_detail
       summary: Get detail on a particular dataset
-      description: Get detail on a particular dataset
+      description: |
+        Obtain detail on a particular dataset including a human readable name,
+        the included Qiita studies, and the molecular preparation type.
       responses:
         '200':
           description: Successfully returned dataset details
